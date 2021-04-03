@@ -1,0 +1,83 @@
+/* about us section */
+/* services section */
+/* portfolio section */
+/* clients section */
+
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+	margin:0;
+	padding:0;
+	background:#363636;
+}
+
+
+
+
+/* hero-header section */
+
+section#hero {
+	height: 100vh;
+	position: relative;
+}
+
+
+
+
+
+
+/* ready section */
+
+section#ready {
+	background-color: #F19323;
+	background-position: right;
+	background-size: 30%;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+.btn.btn-success {
+	background-color: #ffffff;
+	font-weight: bold;
+	margin-top: 35px;
+	font-size: 1rem;
+	border: none;
+	display: inline-block;
+	border-radius: 12px; 
+}
+
+
+
+
+
+/* contacct section */
+
+section#contact #map {
+	height: 500px;
+}
+
+.btn.btn-primary {
+	background-color: #F19323;
+	color: white;
+	font-weight: bold;
+	margin-top: 35px;
+	font-size: 1rem;
+	border: none;
+	text-transform: uppercase;
+	display: inline-block;
+	border-radius: 12px; 
+}
+  
+
+
+
+/* footer section */
+
+footer {
+	background-color: #7AB1BE;
+	height: 300px;
+	font-size: 14px;
+	font-weight: lighter;
+	line-height: 1.8;
+}
+  
