@@ -161,7 +161,7 @@ section#hero .header {
   height: 300px;
   transition: height 0.7s ease;
   background-color: #be252b;
-  transition: background-color 0.7s ease;
+  /* transition: background-color 0.7s ease; */
 }
 
 .box:hover i,
