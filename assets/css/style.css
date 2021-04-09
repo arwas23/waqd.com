@@ -160,6 +160,14 @@ section#hero .header {
 .box:hover {
   height: 300px;
   transition: height 0.7s ease;
+  background-color: #be252b;
+  transition: background-color 0.7s ease;
+}
+
+.box:hover i,
+.box:hover h3 {
+  color: white;
+  transition: color 0.4s ease;
 }
 
 .box:hover p {
