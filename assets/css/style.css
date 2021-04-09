@@ -1,23 +1,21 @@
-/* about us section */
-/* services section */
-/* portfolio section */
-/* clients section */
+
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
   margin: 0;
   padding: 0;
-  background: #535353;
+  background: #383838;
 }
 
 /* --------------------------------------------------- hero-header section -------------------------------------- */
 
 #hero {
-  background: url('../../assets/imgs/waqd\ full\ page\ -min.jpg');
-  background-position: center;
-  background-size: cover;
+  background-image: url('../../assets/imgs/hero.png');
+  background-position: right;
+  background-size:120%;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 section#hero .header {
   display: flex;
@@ -59,7 +57,7 @@ section#hero .header {
 /* --------------------------------------------------- Hero Section -------------------------------------- */
 
 .hero-text {
-  padding: 160px 0 330px 0;
+  padding: 250px 0 330px 0;
   text-align: right;
 }
 
@@ -276,15 +274,16 @@ h3 {
   height: 210px;
 }
 
-/* --------------------------------------------------- Protfolio Section -------------------------------------- */
 
-/* ready section */
+/* --------------------------------------------------- Ready text -------------------------------------- */
+
 
 section#ready {
   background-color: #f19323;
   background-position: right;
-  background-size: 30%;
+  background-size: 60%;
   background-repeat: no-repeat;
+  background-image: url(../../assets/imgs/ready-bg.png);
   height: 300px;
 }
 .btn.btn-success {
@@ -297,23 +296,73 @@ section#ready {
   border-radius: 12px;
 }
 
+
+/* --------------------------------------------------- clients text -------------------------------------- */
+
+
+.clients-text {
+  display: flex;
+  justify-content: center;
+  margin-right: 150px;
+  text-align: right;
+}
+
+.clients-text div {
+  border-top: 5px solid #be252b;
+  padding-top: 20px;
+}
+
+.clients-text h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.clients-text h3 {
+  font-size: 30px;
+  color: #7d7c7c;
+}
+
+
 /* contacct section */
 
-section#contact #map {
-  height: 500px;
+
+#map{
+	max-width: 886px;
+}
+.googlemap {
+	width: 100%;
+	border: 0ex;
+}
+#contact .container {
+	background-color: #858585;
+}
+#contact ::placeholder {
+  color: #cccccc;
+}
+#contact form .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+  border-radius: 0;
 }
 
+
 .btn.btn-primary {
-  background-color: #f19323;
-  color: white;
-  font-weight: bold;
-  margin-top: 35px;
-  font-size: 1rem;
-  border: none;
-  text-transform: uppercase;
-  display: inline-block;
-  border-radius: 12px;
+	background-color: #F19323;
+	color: white;
+	font-weight: bold;
+	margin-top: 35px;
+	font-size: 1rem;
+	border: none;
+	text-transform: uppercase;
+	display: inline-block;
+	border-radius: 12px; 
 }
+  
+
 
 /* footer section */
 
