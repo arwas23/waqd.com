@@ -54,7 +54,7 @@ section#hero .header {
   text-align: right;
 }
 
-/* --------------------------------------------------- Hero Text -------------------------------------- */
+/* --------------------------------------------------- Hero Section -------------------------------------- */
 
 .hero-text {
   padding: 250px 0 330px 0;
@@ -84,7 +84,7 @@ section#hero .header {
   border-radius: 25px;
 }
 
-/* --------------------------------------------------- About text -------------------------------------- */
+/* --------------------------------------------------- About Section -------------------------------------- */
 
 #about {
   padding-bottom: 250px;
@@ -117,7 +117,7 @@ section#hero .header {
   font-size: 30px;
 }
 
-/* --------------------------------------------------- Services text -------------------------------------- */
+/* --------------------------------------------------- Services Section -------------------------------------- */
 
 #services .services-contet {
   display: flex;
@@ -155,21 +155,39 @@ section#hero .header {
   margin: 35px 0;
 }
 
-.second-column .box:nth-last-of-type(1) {
+.box:hover {
+  height: 300px;
+  transition: height 0.7s ease;
+  background-color: #be252b;
+  /* transition: background-color 0.7s ease; */
+}
+
+.box:hover i,
+.box:hover h3 {
+  color: white;
+  transition: color 0.4s ease;
+}
+
+.box:hover p {
+  display: block;
+  transition: display 0.5s ease;
+}
+
+/* .second-column .box:nth-last-of-type(1) {
   height: 435px;
   background: #be252b;
-}
+} */
 
-.second-column .box:nth-last-of-type(1) i,
+/* .second-column .box:nth-last-of-type(1) i,
 .second-column .box:nth-last-of-type(1) h3 {
   color: white;
-}
+} */
 
-.second-column .box:nth-last-of-type(1) p {
+/* .second-column .box:nth-last-of-type(1) p {
   color: white;
   padding-top: 20px;
   font-size: 18px;
-}
+} */
 
 .box i {
   font-size: 40px;
@@ -181,9 +199,13 @@ section#hero .header {
   color: #3b3b3b;
 }
 
+.box p {
+  display: none;
+}
+
 .services-text {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   justify-content: center;
   margin-right: 150px;
   text-align: right;
@@ -192,6 +214,7 @@ section#hero .header {
 .services-text div {
   border-right: 5px solid #be252b;
   padding-right: 20px;
+  margin-top: 250px;
 }
 
 .services-text h1 {
@@ -204,7 +227,7 @@ section#hero .header {
   color: #7d7c7c;
 }
 
-/* --------------------------------------------------- Protfolio text -------------------------------------- */
+/* --------------------------------------------------- Protfolio Section -------------------------------------- */
 
 #portfolio {
   margin: 250px 0;
@@ -235,15 +258,6 @@ h3 {
   /* margin-bottom: 35px; */
 }
 
-/* .portfolio-text div a {
-  background: #7ab1be;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: 7px 20px;
-  font-size: 20px;
-} */
-
 .portfolio-img {
   flex-grow: 2;
 }
@@ -260,7 +274,9 @@ h3 {
   height: 210px;
 }
 
+
 /* --------------------------------------------------- Ready text -------------------------------------- */
+
 
 section#ready {
   background-color: #f19323;
@@ -356,4 +372,54 @@ footer {
   font-size: 14px;
   font-weight: lighter;
   line-height: 1.8;
+}
+
+/* --------------------------------------------------- Mobile -------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  #hero {
+    background: none;
+  }
+
+  .hero-text {
+    padding: 110px 0 330px 0;
+  }
+
+  #about .about-content {
+    flex-direction: column;
+  }
+
+  .about-text {
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  #services .services-contet {
+    flex-direction: column;
+  }
+
+  .services-boxs {
+    grid-template-columns: 200px;
+    column-gap: 35px;
+    row-gap: 0;
+    padding-left: 0;
+  }
+
+  #portfolio {
+    margin: 250px 0;
+    flex-direction: column;
+  }
+
+  .portfolio-img div {
+    grid-template-columns: 190px 190px;
+    justify-content: center;
+  }
+
+  .portfolio-img div img {
+    width: 190px;
+    height: 190px;
+  }
+  .portfolio-text {
+    margin-bottom: 50px;
+  }
 }
