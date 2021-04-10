@@ -1,10 +1,9 @@
-
-
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
   margin: 0;
   padding: 0;
+  background: #535353 !important;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji",
   "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   background: #383838;
@@ -15,7 +14,7 @@ body {
 #hero {
   background-image: url('../../assets/imgs/hero.png');
   background-position: right;
-  background-size:120%;
+  background-size: 120%;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -27,6 +26,16 @@ section#hero .header {
 
 .main-menu {
   width: 50%;
+}
+
+.close-menu,
+.open-menu {
+  display: none;
+}
+
+.open-menu i {
+  font-size: 35px;
+  color: white;
 }
 
 .main-menu ul {
@@ -59,8 +68,8 @@ section#hero .header {
 
 /* --------------------------------------------------- Hero section -------------------------------------- */
 
-.hero-text {
-  padding: 250px 0 330px 0;
+section.hero-text {
+  padding: 160px 0 330px 0;
   text-align: right;
 }
 
@@ -89,7 +98,7 @@ section#hero .header {
 
 /* --------------------------------------------------- About section -------------------------------------- */
 
-#about {
+section#about {
   padding-bottom: 250px;
 }
 
@@ -122,8 +131,12 @@ section#hero .header {
 
 /* --------------------------------------------------- Services section -------------------------------------- */
 
-#services .services-contet {
+.services-contet {
   display: flex;
+}
+
+.services-text.services-mob {
+  display: none;
 }
 
 .services-text {
@@ -233,7 +246,7 @@ section#hero .header {
 
 /* --------------------------------------------------- Protfolio section -------------------------------------- */
 
-#portfolio {
+section#portfolio {
   margin: 250px 0;
   display: flex;
 }
@@ -280,7 +293,6 @@ h3 {
 
 /* --------------------------------------------------- Ready section -------------------------------------- */
 
-
 section#ready {
   background-color: #f19323;
   background-position: right;
@@ -289,6 +301,7 @@ section#ready {
   background-image: url(../../assets/imgs/ready-bg.png);
   height: 300px;
 }
+
 .btn.btn-success {
   background-color: #ffffff;
   font-weight: bold;
@@ -302,7 +315,6 @@ section#ready {
 
 
 /* --------------------------------------------------- clients section -------------------------------------- */
-
 
 .clients-text {
   display: flex;
@@ -326,7 +338,12 @@ section#ready {
   color: #7d7c7c;
 }
 
-.brand-carousel {
+/* contacct section */
+
+#map {
+  max-width: 886px;
+
+  .brand-carousel {
   flex-grow: 2;
 }
 
@@ -357,11 +374,11 @@ section#ready {
 	max-width: 886px;
 }
 .googlemap {
-	width: 100%;
-	border: 0ex;
+  width: 100%;
+  border: 0ex;
 }
 #contact .container {
-	background-color: #858585;
+  background-color: #858585;
 }
 #contact ::placeholder {
   color: #cccccc;
@@ -376,20 +393,17 @@ section#ready {
   border-radius: 0;
 }
 
-
 .btn.btn-primary {
-	background-color: #F19323;
-	color: white;
-	font-weight: bold;
-	margin-top: 35px;
-	font-size: 1rem;
-	border: none;
-	text-transform: uppercase;
-	display: inline-block;
-	border-radius: 12px; 
+  background-color: #f19323;
+  color: white;
+  font-weight: bold;
+  margin-top: 35px;
+  font-size: 1rem;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 12px;
 }
-  
-
 
 /* --------------------------------------------------- footer section -------------------------------------- */
 
@@ -408,8 +422,53 @@ footer {
     background: none;
   }
 
+  .menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #535353;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .main-menu ul {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .main-menu ul li {
+    padding: 7px 0;
+  }
+
+  .main-menu ul li a {
+    color: white;
+    font-size: 20px;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .open-menu {
+    display: block;
+  }
+
   .hero-text {
     padding: 110px 0 330px 0;
+  }
+
+  section#about {
+    margin-top: 150px;
   }
 
   #about .about-content {
@@ -430,6 +489,14 @@ footer {
     column-gap: 35px;
     row-gap: 0;
     padding-left: 0;
+  }
+
+  .services-text.services-mob {
+    display: block;
+  }
+
+  .services-text.services-desk {
+    display: none;
   }
 
   #portfolio {
