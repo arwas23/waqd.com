@@ -1,8 +1,3 @@
-/* about us section */
-/* services section */
-/* portfolio section */
-/* clients section */
-
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
@@ -14,10 +9,11 @@ body {
 /* --------------------------------------------------- hero-header section -------------------------------------- */
 
 #hero {
-  background: url('../../assets/imgs/waqd\ full\ page\ -min.jpg');
-  background-position: center;
-  background-size: cover;
+  background-image: url('../../assets/imgs/hero.png');
+  background-position: right;
+  background-size: 120%;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 section#hero .header {
   display: flex;
@@ -276,15 +272,14 @@ h3 {
   height: 210px;
 }
 
-/* --------------------------------------------------- Protfolio Section -------------------------------------- */
-
-/* ready section */
+/* --------------------------------------------------- Ready text -------------------------------------- */
 
 section#ready {
   background-color: #f19323;
   background-position: right;
-  background-size: 30%;
+  background-size: 60%;
   background-repeat: no-repeat;
+  background-image: url(../../assets/imgs/ready-bg.png);
   height: 300px;
 }
 
@@ -298,10 +293,53 @@ section#ready {
   border-radius: 12px;
 }
 
+/* --------------------------------------------------- clients text -------------------------------------- */
+
+.clients-text {
+  display: flex;
+  justify-content: center;
+  margin-right: 150px;
+  text-align: right;
+}
+
+.clients-text div {
+  border-top: 5px solid #be252b;
+  padding-top: 20px;
+}
+
+.clients-text h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.clients-text h3 {
+  font-size: 30px;
+  color: #7d7c7c;
+}
+
 /* contacct section */
 
-section#contact #map {
-  height: 500px;
+#map {
+  max-width: 886px;
+}
+.googlemap {
+  width: 100%;
+  border: 0ex;
+}
+#contact .container {
+  background-color: #858585;
+}
+#contact ::placeholder {
+  color: #cccccc;
+}
+#contact form .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+  border-radius: 0;
 }
 
 .btn.btn-primary {
