@@ -25,6 +25,16 @@ section#hero .header {
   width: 50%;
 }
 
+.close-menu,
+.open-menu {
+  display: none;
+}
+
+.open-menu i {
+  font-size: 35px;
+  color: white;
+}
+
 .main-menu ul {
   display: flex;
 }
@@ -119,6 +129,10 @@ section#about {
 
 .services-contet {
   display: flex;
+}
+
+.services-text.services-mob {
+  display: none;
 }
 
 .services-text {
@@ -371,8 +385,53 @@ footer {
     background: none;
   }
 
+  .menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #535353;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .main-menu ul {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .main-menu ul li {
+    padding: 7px 0;
+  }
+
+  .main-menu ul li a {
+    color: white;
+    font-size: 20px;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .open-menu {
+    display: block;
+  }
+
   .hero-text {
     padding: 110px 0 330px 0;
+  }
+
+  section#about {
+    margin-top: 150px;
   }
 
   #about .about-content {
@@ -393,6 +452,14 @@ footer {
     column-gap: 35px;
     row-gap: 0;
     padding-left: 0;
+  }
+
+  .services-text.services-mob {
+    display: block;
+  }
+
+  .services-text.services-desk {
+    display: none;
   }
 
   #portfolio {
