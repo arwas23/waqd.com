@@ -1,0 +1,91 @@
+
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji",
+  "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  background: #383838;
+}
+
+
+/* --------------------------------------------------- hero-header section -------------------------------------- */
+
+#hero {
+  background-image: url('../assets/imgs/hero.png');
+  background-position: right;
+  background-size:100%;
+  background-repeat: no-repeat;
+  height: 25vh;
+}
+section#hero .header {
+  display: flex;
+  padding: 35px 0;
+  align-items: center;
+}
+
+.main-menu {
+  width: 50%;
+}
+
+.main-menu ul {
+  display: flex;
+}
+
+.main-menu ul li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+.main-menu ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #979696;
+  font-size: 20px;
+}
+
+.main-menu #lang {
+  margin-right: 45px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  width: 50%;
+  text-align: right;
+}
+
+
+/* --------------------------------------------------- porfolio section -------------------------------------- */
+
+
+#portfolio {
+  height: 250vh;
+}
+
+.gal {
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+	.gal img{ width: 100%; padding: 7px 0;}
+@media (max-width: 500px) {
+
+.gal {
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+}
+		}
+
+/* --------------------------------------------------- footer section -------------------------------------- */
+
+footer {
+  background-color: #7ab1be;
+  height: 300px;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 1.8;
+}
