@@ -264,6 +264,15 @@ section#portfolio {
   margin-right: 50px;
   padding-right: 20px;
 }
+.portfolio-text a {
+  color: #3d4546;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #7ab1be;
+  padding: 10px 25px;
+  font-size: 20px;
+  border-radius: 25px;
+}
 
 .portfolio-text div h1,
 h3 {
@@ -272,7 +281,7 @@ h3 {
 
 .portfolio-text div h3 {
   color: #7d7c7c;
-  /* margin-bottom: 35px; */
+  padding-bottom: 20px;
 }
 
 .portfolio-img {
@@ -354,6 +363,7 @@ section#ready {
   font-size: 30px;
   color: #7d7c7c;
 }
+
 
 .brand-carousel {
   flex-grow: 2;
