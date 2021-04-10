@@ -5,24 +5,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Waqd</title>
+  <title>Waqd E-Marketing</title>
   <meta name="description" content="">
   <meta name="keywords" content="" />
   <meta name="author" content="Arwa Alomari">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
   <!-- Favicons and imagery -->
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/imgs/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/imgs/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="./assets/imgs/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/imgs/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/imgs/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./assets/imgs/favicon/ms-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/imgs/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/imgs/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
 
@@ -35,7 +38,10 @@
     <div class="container">
       <!-- header -->
       <section class="header">
-      
+        <button id="openNav" class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="main-menu">
 
           <div class="menu">
@@ -285,7 +291,6 @@
       </div>
     </div>  </section>
 
-
   <!-- --------------------------------- footer section-------------------------------- -->
 <footer class="pt-5 ">
   <div class="text-center container">
@@ -302,13 +307,13 @@
       <span style="font-size: 2em;" class="pr-2 "><a class="text-dark" href="">
         <i class="fab fa-whatsapp"></i></a>
       </span>
-      <span style="font-size: 2em;" class="pr-2 "><a class="text-dark" href="">
+      <span style="font-size: 2em;" class="pr-2 "><a class="text-dark" href="https://twitter.com/waqd_sa">
         <i class="fab fa-twitter"></i></a>
       </span>
-      <span style="font-size: 2em;" class="pr-2 "><a class="text-dark" href="">
+      <span style="font-size: 2em;" class="pr-2 "><a class="text-dark" href="https://www.instagram.com/waqd_sa/">
         <i class="fab fa-instagram"></i></a>
       </span>
-      <span style="font-size: 2em;" class="pr-2 "><a class="text-dark" href="">
+      <span style="font-size: 2em;" class="pr-2 "><a class="text-dark" href="https://www.snapchat.com/add/waqd_sa">
         <i class="fab fa-snapchat-ghost"></i></a>
       </span>
 
@@ -322,5 +327,28 @@
 
 <script src="/app.js"></script>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="custom.js"></script>
+<script>
+  $('.brand-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  autoplay:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:5
+    }
+  }
+}) 
+
+</script>
 
 </html>
