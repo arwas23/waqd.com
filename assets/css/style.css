@@ -8,12 +8,18 @@ body {
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   background: #383838;
+  background: #363636 !important;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji",
+  "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 /* --------------------------------------------------- hero-header section -------------------------------------- */
 
 #hero {
   background-image: url('../../assets/imgs/waqd\ full\ page\ -min.jpg');
+  background-image: url('../../assets/imgs/hero.png');
+  background-position: right;
+  background-size: 140%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -67,7 +73,7 @@ section#hero .header {
 /* --------------------------------------------------- Hero section -------------------------------------- */
 
 section.hero-text {
-  padding: 160px 0 330px 0;
+  padding: 300px 0 330px 0;
   text-align: right;
 }
 
@@ -148,7 +154,7 @@ section#about {
   column-gap: 35px;
   row-gap: 50px;
   justify-content: center;
-  padding-left: 100px;
+  padding-left: 170px;
 }
 
 .first-column {
@@ -171,6 +177,7 @@ section#about {
 
 .box:hover {
   height: 300px;
+  padding-top: 10px;
   transition: height 0.7s ease;
   background-color: #be252b;
   /* transition: background-color 0.7s ease; */
@@ -229,7 +236,7 @@ section#about {
 .services-text div {
   border-right: 5px solid #be252b;
   padding-right: 20px;
-  margin-top: px;
+  margin-top: 330px;
 }
 
 .services-text h1 {
@@ -330,6 +337,8 @@ section#ready {
 }
 
 .clients-text {
+  /* 
+   */
   display: flex;
   justify-content: center;
   margin-right: 150px;
@@ -338,7 +347,8 @@ section#ready {
 
 .clients-text div {
   border-right: 5px solid #be252b;
-  padding-top: 20px;
+  padding-right: 15px;
+  margin-top: 30px;
 }
 
 .clients-text h1 {
@@ -346,7 +356,7 @@ section#ready {
   color: white;
 }
 
-.clients-text h3 {
+.clients-text p {
   font-size: 30px;
   color: #7d7c7c;
 }
