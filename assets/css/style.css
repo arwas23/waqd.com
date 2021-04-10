@@ -56,11 +56,8 @@ section#hero .header {
   text-align: right;
 }
 
-<<<<<<< HEAD
+
 /* --------------------------------------------------- Hero section -------------------------------------- */
-=======
-/* --------------------------------------------------- Hero Section -------------------------------------- */
->>>>>>> 003f76eefe14cad67c0ce7c4671cb8dfb84de003
 
 .hero-text {
   padding: 250px 0 330px 0;
@@ -90,11 +87,7 @@ section#hero .header {
   border-radius: 25px;
 }
 
-<<<<<<< HEAD
 /* --------------------------------------------------- About section -------------------------------------- */
-=======
-/* --------------------------------------------------- About Section -------------------------------------- */
->>>>>>> 003f76eefe14cad67c0ce7c4671cb8dfb84de003
 
 #about {
   padding-bottom: 250px;
@@ -127,11 +120,7 @@ section#hero .header {
   font-size: 30px;
 }
 
-<<<<<<< HEAD
 /* --------------------------------------------------- Services section -------------------------------------- */
-=======
-/* --------------------------------------------------- Services Section -------------------------------------- */
->>>>>>> 003f76eefe14cad67c0ce7c4671cb8dfb84de003
 
 #services .services-contet {
   display: flex;
@@ -184,6 +173,7 @@ section#hero .header {
 
 .box:hover p {
   display: block;
+  padding-top: 10px;
   transition: display 0.5s ease;
 }
 
@@ -228,7 +218,7 @@ section#hero .header {
 .services-text div {
   border-right: 5px solid #be252b;
   padding-right: 20px;
-  margin-top: 250px;
+  margin-top: px;
 }
 
 .services-text h1 {
@@ -241,11 +231,7 @@ section#hero .header {
   color: #7d7c7c;
 }
 
-<<<<<<< HEAD
 /* --------------------------------------------------- Protfolio section -------------------------------------- */
-=======
-/* --------------------------------------------------- Protfolio Section -------------------------------------- */
->>>>>>> 003f76eefe14cad67c0ce7c4671cb8dfb84de003
 
 #portfolio {
   margin: 250px 0;
@@ -292,12 +278,7 @@ h3 {
   height: 210px;
 }
 
-<<<<<<< HEAD
 /* --------------------------------------------------- Ready section -------------------------------------- */
-=======
-
-/* --------------------------------------------------- Ready text -------------------------------------- */
->>>>>>> 003f76eefe14cad67c0ce7c4671cb8dfb84de003
 
 
 section#ready {
@@ -314,7 +295,7 @@ section#ready {
   margin-top: 25px;
   display: inline-block;
   padding: 5px 20px;
-  font-size: 20px;
+  padding: 10px 25px;
   border-radius: 25px;
   border: none;
 }
