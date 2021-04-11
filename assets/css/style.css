@@ -13,11 +13,12 @@ body {
 
 #hero {
   height: 100vh;
-  background-image: url('../../assets/imgs/hero.png');
-  background-position: right;
-  background-size: 140%;
+  background-image: url('../../assets/imgs/hero-2.png');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
 }
+
 section#hero .header {
   display: flex;
   padding: 35px 0;
@@ -68,7 +69,7 @@ section#hero .header {
 /* --------------------------------------------------- Hero section -------------------------------------- */
 
 section.hero-text {
-  padding: 300px 0 330px 0;
+  padding: 170px 0 330px 0;
   text-align: right;
 }
 
@@ -98,7 +99,7 @@ section.hero-text {
 /* --------------------------------------------------- About section -------------------------------------- */
 
 section#about {
-  padding-bottom: 150px;
+  padding: 150px 0;
 }
 
 #about .about-content {
@@ -224,7 +225,7 @@ section#about {
   justify-content: center;
   margin-right: 200px;
   text-align: right;
-  margin-top: 250px;
+  align-items: center;
   flex-grow: 1;
 }
 
@@ -318,7 +319,6 @@ section#ready {
 .text-center h5 {
   font-size: 30px;
   color: white;
-
 }
 
 .btn.btn-success {
@@ -337,11 +337,13 @@ section#ready {
 /* --------------------------------------------------- clients section -------------------------------------- */
 
 #clients {
+  flex-direction: row-reverse;
   margin-top: 150px;
+  display: flex;
+  align-items: center;
 }
 
 .clients-text {
-  display: flex;
   justify-content: center;
   margin-right: 150px;
   text-align: right;
@@ -350,7 +352,7 @@ section#ready {
 .clients-text div {
   border-right: 5px solid #be252b;
   padding-right: 15px;
-  margin-top: 30px;
+  margin-bottom: 90px;
 }
 
 .clients-text h1 {
@@ -363,9 +365,9 @@ section#ready {
   color: #7d7c7c;
 }
 
-
 .brand-carousel {
   flex-grow: 2;
+  margin-right: 50px;
 }
 
 .owl-dots {
@@ -390,7 +392,6 @@ section#ready {
   margin-top: 100px;
 }
 
-
 #contact .mb-5 {
   color: #f19323 !important;
 }
@@ -404,7 +405,6 @@ section#ready {
 }
 #contact .container {
   background-color: #858585;
- 
 }
 #contact ::placeholder {
   color: #cccccc;
@@ -454,7 +454,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   #hero {
-    background-position:bottom;
+    background-position: bottom;
     background-size: 500%;
   }
 
@@ -501,7 +501,7 @@ footer {
 
   .hero-text .h2 {
     margin-top: 10px;
-    }
+  }
 
   section#about {
     margin-top: 150px;
@@ -522,6 +522,10 @@ footer {
     margin-right: 10px;
   }
 
+  section.hero-text {
+    padding: 130px 0 330px 0;
+  }
+
   #services .services-contet {
     flex-direction: column;
   }
@@ -538,10 +542,12 @@ footer {
     height: 150px;
   }
   .box h3 {
-  font-size: 20px;  }
-  
+    font-size: 20px;
+  }
+
   .services-boxs {
-    grid-template-columns: 200px;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 180px;
     column-gap: 35px;
     row-gap: 0;
     padding-left: 0;
@@ -554,7 +560,7 @@ footer {
   .services-text.services-desk {
     display: none;
   }
-  
+
   #portfolio {
     margin: 250px 0;
     flex-direction: column;
@@ -572,6 +578,11 @@ footer {
   .portfolio-text {
     margin-bottom: 50px;
   }
+
+  #clients {
+    flex-direction: column;
+  }
+
   .clients-text div {
     text-align: right;
     border-right: 5px solid #be252b;
@@ -581,14 +592,13 @@ footer {
   .clients-text {
     text-align: right;
     margin-right: 1px;
-
-}
+  }
   .text-center h1 {
-  font-size: 50px;
-  margin-top: 15px;
+    font-size: 50px;
+    margin-top: 15px;
   }
 
   .col-12.col-md-7.px-0 {
-  padding-left: none;
+    padding-left: none;
   }
 }
