@@ -30,6 +30,16 @@ section#hero .header {
   width: 50%;
 }
 
+.close-menu,
+.open-menu {
+  display: none;
+}
+
+.open-menu i {
+  font-size: 35px;
+  color: white;
+}
+
 .main-menu ul {
   display: flex;
 }
@@ -43,7 +53,7 @@ section#hero .header {
   list-style: none;
   text-decoration: none;
   color: #979696;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .main-menu #lang {
@@ -61,9 +71,7 @@ section#hero .header {
 /* --------------------------------------------------- porfolio section -------------------------------------- */
 
 
-#portfolio {
-  height: 250vh;
-}
+
 
 .gal {
 	-webkit-column-count: 3; /* Chrome, Safari, Opera */
