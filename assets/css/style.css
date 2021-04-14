@@ -337,8 +337,8 @@ section#ready {
 /* --------------------------------------------------- clients section -------------------------------------- */
 
 #clients {
-  flex-direction: row-reverse;
-  margin-top: 150px;
+    flex-direction: row-reverse;
+  margin-top: 90px;
   display: flex;
   align-items: center;
 }
@@ -368,6 +368,8 @@ section#ready {
 .brand-carousel {
   flex-grow: 2;
   margin-right: 50px;
+  margin-left: 100px;
+
 }
 
 .owl-dots {
@@ -387,28 +389,29 @@ section#ready {
   background-color: #000 !important;
 }
 
+
+
 /* --------------------------------------------------- contact section -------------------------------------- */
+
+
 #contact {
-  margin-top: 100px;
+  background-color: #363636;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
-#contact .mb-5 {
-  color: #f19323 !important;
+section#contact h2 strong {
+  color: #f19323;
+  font-size: 95%;
 }
 
-#map {
-  max-width: 886px;
-}
-.googlemap {
-  width: 100%;
-  border: 0ex;
-}
-#contact .container {
-  background-color: #858585;
-}
+
 #contact ::placeholder {
-  color: #cccccc;
+  text-align: right;
+  color: #777777;
 }
+
+
 #contact form .form-control {
   background: transparent;
   border: none;
@@ -416,28 +419,34 @@ section#ready {
   font-size: 1.2rem;
   font-weight: lighter;
   color: white;
-  text-align: right;
   border-radius: 0;
 }
+
+
 
 .btn.btn-primary {
   background-color: #f19323;
   color: white;
   font-weight: bold;
-  margin-top: 35px;
-  font-size: 1rem;
+  padding: 5px 5px 5px 5px;
+  font-size: 20px;
+  border-radius: 25px;
   border: none;
-  text-transform: uppercase;
-  display: inline-block;
-  border-radius: 12px;
 }
 
-button.btn.btn-primary.border-0.my-4.px-5 {
+.btn.btn-primary.inverted {
+  background-color: #464838;
+}
+
+
+/* --------------------------------------------------- map section -------------------------------------- */
+
+#map {
+  margin-top: 25px;
+}
+.googlemap {
   width: 100%;
-}
-
-.col-12.col-md-7.px-0 {
-  padding-left: 50px;
+  border: 0ex;
 }
 
 /* --------------------------------------------------- footer section -------------------------------------- */
@@ -601,4 +610,6 @@ footer {
   .col-12.col-md-7.px-0 {
     padding-left: none;
   }
+
+
 }
