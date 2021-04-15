@@ -1,0 +1,615 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #363636 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* --------------------------------------------------- hero-header section -------------------------------------- */
+
+#hero {
+  height: 100vh;
+  background-image: url('../../assets/imgs/hero-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+section#hero .header {
+  display: flex;
+  padding: 35px 0;
+  align-items: center;
+}
+
+.main-menu {
+  width: 50%;
+}
+
+.close-menu,
+.open-menu {
+  display: none;
+}
+
+.open-menu i {
+  font-size: 35px;
+  color: white;
+}
+
+.main-menu ul {
+  display: flex;
+}
+
+.main-menu ul li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+.main-menu ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #979696;
+  font-size: 18px;
+}
+
+.main-menu #lang {
+  margin-right: 45px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  width: 50%;
+  text-align: right;
+}
+
+/* --------------------------------------------------- Hero section -------------------------------------- */
+
+section.hero-text {
+  padding: 170px 0 330px 0;
+  text-align: right;
+}
+
+.hero-text h2 {
+  color: white;
+  padding: 10px 0;
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.hero-text h1 {
+  color: #d51f26;
+  font-size: 65px;
+  margin-bottom: 40px;
+}
+
+.hero-text a {
+  color: #3d4546;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #7ab1be;
+  padding: 10px 25px;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
+/* --------------------------------------------------- About section -------------------------------------- */
+
+section#about {
+  padding: 150px 0;
+}
+
+#about .about-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-text {
+  text-align: right;
+  margin-right: 50px;
+}
+
+.about-text div {
+  padding-right: 20px;
+  border-right: 5px solid #eb9125;
+  color: white;
+}
+
+.about-text h1 {
+  font-size: 40px;
+}
+
+.about-text p {
+  padding-top: 50px;
+  padding-right: 20px;
+  color: #7d7c7c;
+  font-size: 30px;
+}
+
+.about-img img {
+  height: 650px;
+}
+
+/* --------------------------------------------------- Services section -------------------------------------- */
+
+.services-contet {
+  display: flex;
+}
+
+.services-text.services-mob {
+  display: none;
+}
+
+.services-boxs {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  column-gap: 35px;
+  row-gap: 50px;
+  justify-content: center;
+  padding-left: 170px;
+}
+
+.first-column {
+  text-align: right;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 35px 0;
+}
+
+.box:hover {
+  height: 300px;
+  padding-top: 10px;
+  transition: height 0.7s ease;
+  background-color: #be252b;
+  /* transition: background-color 0.7s ease; */
+}
+
+.box:hover i,
+.box:hover h3 {
+  color: white;
+  transition: color 0.4s ease;
+}
+
+.box:hover p {
+  display: block;
+  padding-top: 10px;
+  transition: display 0.5s ease;
+}
+
+/* .second-column .box:nth-last-of-type(1) {
+  height: 435px;
+  background: #be252b;
+} */
+
+/* .second-column .box:nth-last-of-type(1) i,
+.second-column .box:nth-last-of-type(1) h3 {
+  color: white;
+} */
+
+/* .second-column .box:nth-last-of-type(1) p {
+  color: white;
+  padding-top: 20px;
+  font-size: 18px;
+} */
+
+.box i {
+  font-size: 40px;
+  padding-bottom: 15px;
+  color: #be252b;
+}
+
+.box h3 {
+  color: #3b3b3b;
+}
+
+.box p {
+  display: none;
+}
+
+.services-text {
+  justify-content: center;
+  margin-right: 200px;
+  text-align: right;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.services-text div {
+  border-right: 5px solid #be252b;
+  padding-right: 20px;
+  margin-top: 330px;
+}
+
+.services-text h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.services-text p {
+  font-size: 30px;
+  color: #7d7c7c;
+}
+
+/* --------------------------------------------------- Protfolio section -------------------------------------- */
+
+section#portfolio {
+  margin: 250px 0;
+  display: flex;
+}
+
+.portfolio-text {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.portfolio-text div {
+  text-align: right;
+  border-right: 5px solid #7ab1be;
+  margin-right: 50px;
+  padding-right: 20px;
+}
+.portfolio-text a {
+  color: #3d4546;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #7ab1be;
+  padding: 10px 25px;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
+.portfolio-text div h1,
+h3 {
+  color: white;
+}
+
+.portfolio-text div h3 {
+  color: #7d7c7c;
+  padding-bottom: 20px;
+}
+
+.portfolio-img {
+  flex-grow: 2;
+}
+
+.portfolio-img div {
+  display: grid;
+  grid-template-columns: 210px 210px 210px 210px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.portfolio-img div img {
+  width: 210px;
+  height: 210px;
+}
+
+/* --------------------------------------------------- Ready section -------------------------------------- */
+
+section#ready {
+  background-color: #f19323;
+  background-position: right;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/imgs/ready-bg.png);
+  height: 300px;
+}
+
+.text-center h1 {
+  font-size: 50px;
+}
+
+.text-center h5 {
+  font-size: 30px;
+  color: white;
+}
+
+.btn.btn-success {
+  background-color: #ffffff;
+  font-weight: bold;
+  margin-top: 25px;
+  display: inline-block;
+  padding: 5px 20px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  color: #f19323 !important;
+  font-weight: 500;
+}
+
+/* --------------------------------------------------- clients section -------------------------------------- */
+
+#clients {
+    flex-direction: row-reverse;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.clients-text {
+  justify-content: center;
+  margin-right: 150px;
+  text-align: right;
+}
+
+.clients-text div {
+  border-right: 5px solid #be252b;
+  padding-right: 15px;
+  margin-bottom: 90px;
+}
+
+.clients-text h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.clients-text p {
+  font-size: 30px;
+  color: #7d7c7c;
+}
+
+.brand-carousel {
+  flex-grow: 2;
+  margin-right: 50px;
+  margin-left: 100px;
+
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 4%;
+}
+.owl-dot {
+  display: inline-block;
+  height: 5px !important;
+  width: 5px !important;
+  background-color: #878787 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.owl-dot.active {
+  background-color: #000 !important;
+}
+
+
+
+/* --------------------------------------------------- contact section -------------------------------------- */
+
+
+#contact {
+  background-color: #363636;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+section#contact h2 strong {
+  color: #f19323;
+  font-size: 95%;
+}
+
+
+#contact ::placeholder {
+  text-align: right;
+  color: #777777;
+}
+
+
+#contact form .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+  border-radius: 0;
+}
+
+
+
+.btn.btn-primary {
+  background-color: #f19323;
+  color: white;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn.btn-primary.inverted {
+  background-color: #464838;
+}
+
+
+/* --------------------------------------------------- map section -------------------------------------- */
+
+#map {
+  margin-top: 25px;
+}
+.googlemap {
+  width: 100%;
+  border: 0ex;
+}
+
+/* --------------------------------------------------- footer section -------------------------------------- */
+
+footer {
+  background-color: #7ab1be;
+  height: 300px;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 1.8;
+}
+
+/* --------------------------------------------------- Mobile -------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  #hero {
+    background-position: bottom;
+    background-size: 500%;
+  }
+
+  .menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #535353;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .main-menu ul {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .main-menu ul li {
+    padding: 7px 0;
+  }
+
+  .main-menu ul li a {
+    color: white;
+    font-size: 20px;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .open-menu {
+    display: block;
+  }
+
+  .hero-text .h2 {
+    margin-top: 10px;
+  }
+
+  section#about {
+    margin-top: 150px;
+    padding-bottom: 2px;
+  }
+
+  #about .about-content {
+    flex-direction: column;
+  }
+
+  .about-img img {
+    height: 450px;
+    margin-top: 3px;
+  }
+
+  .about-text {
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  section.hero-text {
+    padding: 130px 0 330px 0;
+  }
+
+  #services .services-contet {
+    flex-direction: column;
+  }
+
+  .services-text {
+    margin-right: 50px;
+    margin-top: 2px;
+  }
+  .services-text div {
+    margin-top: 230px;
+  }
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+  .box h3 {
+    font-size: 20px;
+  }
+
+  .services-boxs {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 180px;
+    column-gap: 35px;
+    row-gap: 0;
+    padding-left: 0;
+  }
+
+  .services-text.services-mob {
+    display: block;
+  }
+
+  .services-text.services-desk {
+    display: none;
+  }
+
+  #portfolio {
+    margin: 250px 0;
+    flex-direction: column;
+  }
+
+  .portfolio-img div {
+    grid-template-columns: 190px 190px;
+    justify-content: center;
+  }
+
+  .portfolio-img div img {
+    width: 170px;
+    height: 170px;
+  }
+  .portfolio-text {
+    margin-bottom: 50px;
+  }
+
+  #clients {
+    flex-direction: column;
+  }
+
+  .clients-text div {
+    text-align: right;
+    border-right: 5px solid #be252b;
+    padding-right: 20px;
+  }
+
+  .clients-text {
+    text-align: right;
+    margin-right: 1px;
+  }
+  .text-center h1 {
+    font-size: 50px;
+    margin-top: 15px;
+  }
+
+  .col-12.col-md-7.px-0 {
+    padding-left: none;
+  }
+
+
+}
