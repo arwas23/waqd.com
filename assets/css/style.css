@@ -75,7 +75,7 @@ section.hero-text {
 
 .hero-text h2 {
   color: white;
-  padding: 10px 0;
+  padding: 55px 0;
   font-size: 55px;
   font-weight: 400;
 }
@@ -119,14 +119,21 @@ section#about {
 }
 
 .about-text h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
+
+.about-text h3 {
+  color: #7d7c7c;
+  font-size: 20px;
+  padding-bottom: 20px;
+  }
+
 
 .about-text p {
   padding-top: 50px;
   padding-right: 20px;
-  color: #7d7c7c;
-  font-size: 30px;
+  color: #9e9e9e;
+  font-size: 25px;
 }
 
 .about-img img {
@@ -236,13 +243,14 @@ section#about {
 }
 
 .services-text h1 {
-  font-size: 40px;
+  font-size: 35px;
   color: white;
 }
 
 .services-text p {
-  font-size: 30px;
   color: #7d7c7c;
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
 /* --------------------------------------------------- Protfolio section -------------------------------------- */
@@ -275,13 +283,15 @@ section#portfolio {
   border-radius: 25px;
 }
 
-.portfolio-text div h1,
-h3 {
+.portfolio-text div h1 {
   color: white;
+  font-size: 35px;
 }
+
 
 .portfolio-text div h3 {
   color: #7d7c7c;
+  font-size: 20px;
   padding-bottom: 20px;
 }
 
@@ -337,7 +347,7 @@ section#ready {
 /* --------------------------------------------------- clients section -------------------------------------- */
 
 #clients {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
   margin-top: 90px;
   display: flex;
   align-items: center;
@@ -356,19 +366,20 @@ section#ready {
 }
 
 .clients-text h1 {
-  font-size: 40px;
+  font-size: 35px;
   color: white;
 }
 
-.clients-text p {
-  font-size: 30px;
+.clients-text h3 {
   color: #7d7c7c;
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
 .brand-carousel {
   flex-grow: 2;
-  margin-right: 50px;
-  margin-left: 100px;
+  margin-right: Z0px;
+  width: 50%;
 
 }
 
@@ -508,9 +519,9 @@ footer {
     display: block;
   }
 
-  .hero-text .h2 {
-    margin-top: 10px;
-  }
+  .hero-text  {
+    margin-top: 60px;
+    }
 
   section#about {
     margin-top: 150px;
@@ -529,6 +540,7 @@ footer {
   .about-text {
     text-align: right;
     margin-right: 10px;
+    margin-right: 50px;
   }
 
   section.hero-text {
@@ -551,8 +563,9 @@ footer {
     height: 150px;
   }
   .box h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
+
 
   .services-boxs {
     grid-template-columns: 150px 150px;
@@ -568,6 +581,9 @@ footer {
 
   .services-text.services-desk {
     display: none;
+  }
+  .box i {
+    font-size: 35px;
   }
 
   #portfolio {
@@ -592,16 +608,16 @@ footer {
     flex-direction: column;
   }
 
+  .clients-text {
+    margin-right: 50px;
+
+  }
   .clients-text div {
-    text-align: right;
     border-right: 5px solid #be252b;
-    padding-right: 20px;
+
   }
 
-  .clients-text {
-    text-align: right;
-    margin-right: 1px;
-  }
+  
   .text-center h1 {
     font-size: 50px;
     margin-top: 15px;
