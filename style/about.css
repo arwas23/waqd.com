@@ -1,29 +1,35 @@
-
-
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji",
-  "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   background: #383838;
 }
 
-
 /* --------------------------------------------------- hero-header section -------------------------------------- */
-
 
 section#hero .header {
   background-color: #383838;
   display: flex;
-  padding: 35px 0;
+  padding: 20px 0;
   align-items: center;
-  
 }
 
 .main-menu {
   width: 50%;
+}
+
+.close-menu,
+.open-menu {
+  display: none;
+}
+
+.open-menu i {
+  font-size: 35px;
+  color: white;
 }
 
 .main-menu ul {
@@ -35,11 +41,12 @@ section#hero .header {
   list-style: none;
 }
 
-.main-menu ul li a {
+.main-menu ul li a,
+.main-menu ul a {
   list-style: none;
   text-decoration: none;
   color: #979696;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .main-menu #lang {
@@ -53,50 +60,47 @@ section#hero .header {
   text-align: right;
 }
 
-
 /* --------------------------------------------------- pic section -------------------------------------- */
 
 #pic {
   background-image: url('../assets/imgs/about-header.jpg');
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 55vh;
 }
 
-
 /* --------------------------------------------------- about us section -------------------------------------- */
 
-#aboutus {
-margin-left: 200px; 
-margin-right: 200px; 
-height: 45vh;
+/* #aboutus.aboutus-text {
+  display: flex;
+} */
+
+.aboutus-text.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 170px;
 }
 
-.aboutus-text {
-  justify-content: center;
+.aboutus-text div {
   text-align: right;
-  margin-top: 200px;
+  padding-right: 70px;
 }
 .aboutus-text div h1 {
   color: #7ab1be;
   font-size: 50px;
+  font-weight: bold;
 }
 
 .aboutus-text div p {
   color: #c2c2c2;
-  font-size: 25px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  font-size: 23px;
 }
-
 
 /* --------------------------------------------------- value section -------------------------------------- */
 
-
-
-
-#vision .vision-content {
+/* #vision .vision-content {
   display: flex;
   align-items: center;
 }
@@ -106,10 +110,10 @@ height: 45vh;
   margin-right: 50px;
 }
 
-
 .vision-tex h1 {
   font-size: 40px;
-color: #eb9125;}
+  color: #eb9125;
+}
 
 .vision-tex p {
   padding-top: 50px;
@@ -120,10 +124,92 @@ color: #eb9125;}
 
 .vision-img img {
   height: 450px;
+} */
+
+section#values {
+  margin: 170px 0;
 }
 
+.values-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.box {
+  height: 400px;
+  width: 240px;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
 
+.meddle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s linear;
+}
+
+.front {
+  background-color: #333;
+  transform: perspective(600px) rotateY(0deg);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.back {
+  padding: 0 25px;
+  background-color: #c2c2c2;
+  transform: perspective(600px) rotateY(180deg);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.box:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.box:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.box i {
+  font-size: 35px;
+  color: #7ab1be;
+  padding: 20px;
+  border-radius: 50%;
+  border: white 2px solid;
+  margin-bottom: 15px;
+}
+
+.box h1 {
+  font-weight: bold;
+  color: white;
+  font-size: 35px;
+}
+
+.box p {
+  font-size: 18px;
+  color: black;
+  /* display: none; */
+}
 
 /* --------------------------------------------------- footer section -------------------------------------- */
 
@@ -133,4 +219,63 @@ footer {
   font-size: 14px;
   font-weight: lighter;
   line-height: 1.8;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #535353;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .main-menu ul {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .main-menu ul li {
+    padding: 7px 0;
+  }
+
+  .main-menu ul li a {
+    color: white;
+    font-size: 20px;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .open-menu {
+    display: block;
+  }
+
+  .aboutus-text.text-center {
+    flex-direction: column;
+  }
+
+  .aboutus-text div {
+    padding: 0;
+  }
+
+  .values-box {
+    flex-direction: column;
+  }
+
+  .box {
+    margin: 20px 0;
+  }
 }
