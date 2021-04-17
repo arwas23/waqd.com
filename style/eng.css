@@ -56,7 +56,7 @@ section#hero .header {
 }
 
 .main-menu #lang {
-  margin-right: 45px;
+  margin-left: 45px;
   color: white;
   text-decoration: none;
 }
@@ -162,7 +162,7 @@ padding-bottom: 20px;
 }
 
 .first-column {
-  text-align: left;
+  text-align: right;
 }
 
 .box {
@@ -171,8 +171,8 @@ padding-bottom: 20px;
   justify-content: center;
   align-items: center;
   background: white;
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   padding: 15px;
   border-radius: 5px;
   text-align: center;
@@ -216,12 +216,13 @@ padding-bottom: 20px;
 } */
 
 .box i {
-  font-size: 40px;
+  font-size: 35px;
   padding-bottom: 15px;
   color: #be252b;
 }
 
 .box h3 {
+  font-size: 20px;
   color: #3b3b3b;
 }
 
@@ -235,7 +236,7 @@ padding-bottom: 20px;
   margin-right: 70px;
   text-align: left;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 .services-text div {
@@ -521,6 +522,9 @@ footer {
     display: block;
     text-align: right;
   }
+  .main-menu #lang {
+    margin-left: 1px;
+  }
 
   .hero-text {
     margin-top: 95px;
@@ -621,6 +625,9 @@ footer {
   #clients {
     flex-direction: column;
   }
+  .clients-text {
+    margin-right: 320px;
+  }
 
   .clients-text div {
     text-align: left;
@@ -630,7 +637,6 @@ footer {
 
   .clients-text {
     text-align: left;
-    margin-right: 0px;
   }
   .text-center h1 {
     font-size: 50px;

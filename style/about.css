@@ -220,6 +220,7 @@ footer {
   font-weight: lighter;
   line-height: 1.8;
 }
+/* --------------------------------------------------- mobile section -------------------------------------- */
 
 @media only screen and (max-width: 600px) {
   .menu {
@@ -262,15 +263,31 @@ footer {
   .open-menu {
     display: block;
   }
+  .main-menu #lang {
+    margin-right: 1px;
+  }
 
   .aboutus-text.text-center {
     flex-direction: column;
   }
 
   .aboutus-text div {
+    text-align: center;
     padding: 0;
   }
+  .aboutus-text div h1 {
+    font-size: 40px;
+  }
+  
+  .aboutus-text div p {
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }  
 
+  .about-img img {
+    height: 450px;
+  }
   .values-box {
     flex-direction: column;
   }
