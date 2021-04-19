@@ -122,9 +122,9 @@ section#about {
   font-size: 35px;
 }
 .about-text h3 {
-color: #7d7c7c;
-font-size: 20px;
-padding-bottom: 20px;
+  color: #7d7c7c;
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
 .about-text p {
@@ -145,6 +145,7 @@ padding-bottom: 20px;
 
 .services-contet {
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .services-text.services-mob {
@@ -158,7 +159,7 @@ padding-bottom: 20px;
   column-gap: 35px;
   row-gap: 50px;
   justify-content: center;
-  padding-left: 170px;
+  padding-left: 0px;
 }
 
 .first-column {
@@ -233,7 +234,6 @@ padding-bottom: 20px;
 .services-text {
   justify-content: center;
   margin-left: 150px;
-  margin-right: 70px;
   text-align: left;
   align-items: center;
   flex-grow: 2;
@@ -276,8 +276,6 @@ section#portfolio {
   border-left: 5px solid #7ab1be;
   margin-right: 70px;
   color: white;
-
-
 }
 .portfolio-text a {
   color: #3d4546;
@@ -288,8 +286,6 @@ section#portfolio {
   font-size: 20px;
   border-radius: 25px;
 }
-
-
 
 .portfolio-text div h3 {
   color: #7d7c7c;
@@ -383,7 +379,6 @@ section#ready {
   flex-grow: 2;
   margin-left: 30px;
   width: 50%;
-
 }
 
 .owl-dots {
@@ -403,10 +398,7 @@ section#ready {
   background-color: #000 !important;
 }
 
-
-
 /* --------------------------------------------------- contact section -------------------------------------- */
-
 
 #contact {
   background-color: #363636;
@@ -419,12 +411,10 @@ section#contact h2 strong {
   font-size: 95%;
 }
 
-
 #contact ::placeholder {
   text-align: left;
   color: #777777;
 }
-
 
 #contact form .form-control {
   background: transparent;
@@ -435,8 +425,6 @@ section#contact h2 strong {
   color: white;
   border-radius: 0;
 }
-
-
 
 .btn.btn-primary {
   background-color: #f19323;
@@ -451,7 +439,6 @@ section#contact h2 strong {
 .btn.btn-primary.inverted {
   background-color: #464838;
 }
-
 
 /* --------------------------------------------------- map section -------------------------------------- */
 
@@ -539,12 +526,10 @@ footer {
     flex-direction: column;
   }
 
- 
-
   .about-text {
     text-align: left;
     margin-right: 50px;
-    margin-top: 2px;  
+    margin-top: 2px;
   }
 
   section.hero-text {
@@ -553,21 +538,20 @@ footer {
   .about-text p {
     font-size: 20px;
   }
-  
+
   .about-img {
     display: none;
   }
-  
-  .about-img-mob {    
-    display:grid;
+
+  .about-img-mob {
+    display: grid;
   }
 
-  .about-img-mob img { 
+  .about-img-mob img {
     height: 450px;
-   text-align: center;
-  }   
+    text-align: center;
+  }
 
-  
   #services .services-contet {
     flex-direction: column;
   }
@@ -605,11 +589,14 @@ footer {
   .box i {
     font-size: 35px;
   }
-  
+
   #portfolio {
     margin: 250px 0;
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
 
+  .portfolio-text {
+    padding-bottom: 25px;
   }
 
   .portfolio-img div {
@@ -647,6 +634,4 @@ footer {
   .col-12.col-md-7.px-0 {
     padding-left: none;
   }
-
-
 }
