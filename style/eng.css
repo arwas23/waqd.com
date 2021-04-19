@@ -13,7 +13,7 @@ body {
 
 #hero {
   height: 100vh;
-  background-image: url('../../assets/imgs/hero-2.png');
+  background-image: url('../assets/imgs/hero-4-0١.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -135,7 +135,7 @@ padding-bottom: 20px;
 }
 
 .about-img img {
-  height: 650px;
+  height: 550px;
 }
 .about-img-mob {
   height: 550px;
@@ -557,13 +557,14 @@ footer {
   .about-img {
     display: none;
   }
+  
   .about-img-mob {    
-    display: flex;
-    height: 450px;
+    display:grid;
   }
+
   .about-img-mob img { 
+    height: 450px;
    text-align: center;
-   margin-left: 250px;
   }   
 
   

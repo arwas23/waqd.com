@@ -12,7 +12,6 @@ body {
 /* --------------------------------------------------- hero-header section -------------------------------------- */
 
 section#hero .header {
-  background-color: #383838;
   display: flex;
   padding: 35px 0;
   align-items: center;
@@ -46,18 +45,18 @@ section#hero .header {
   list-style: none;
   text-decoration: none;
   color: #979696;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .main-menu #lang {
-  margin-right: 45px;
+  margin-left: 45px;
   color: white;
   text-decoration: none;
 }
 
 .logo {
   width: 50%;
-  text-align: right;
+  text-align: left;
 }
 
 /* --------------------------------------------------- pic section -------------------------------------- */
@@ -72,9 +71,6 @@ section#hero .header {
 
 /* --------------------------------------------------- about us section -------------------------------------- */
 
-/* #aboutus.aboutus-text {
-  display: flex;
-} */
 
 .aboutus-text.text-center {
   display: flex;
@@ -84,7 +80,7 @@ section#hero .header {
 }
 
 .aboutus-text div {
-  text-align: right;
+  text-align: left;
   padding-right: 70px;
 }
 .aboutus-text div h1 {
@@ -97,9 +93,11 @@ section#hero .header {
   color: #c2c2c2;
   font-size: 23px;
 }
+.about-img-mob {
+  display:none ;
+}
 
 /* --------------------------------------------------- value section -------------------------------------- */
-
 
 
 section#values {
@@ -238,9 +236,11 @@ footer {
 
   .open-menu {
     display: block;
+    text-align: right;
+
   }
   .main-menu #lang {
-    margin-right: 1px;
+    margin-left: 1px;
   }
 
   .aboutus-text.text-center {
@@ -252,19 +252,21 @@ footer {
     padding: 0;
   }
   .aboutus-text div h1 {
-    font-size: 35px;
+    font-size: 40px;
   }
   
   .aboutus-text div p {
-    font-size: 17px;
+    font-size: 20px;
     padding-bottom: 15px;
     padding-top: 5px;
   }  
-
+  .about-img {
+    display:none ;
+  }
   .about-img img {
     display: none;  
   }
-  .values-box { 
+  .values-box {
     flex-direction: column;
   }
 
