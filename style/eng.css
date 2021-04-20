@@ -159,7 +159,7 @@ section#about {
   column-gap: 35px;
   row-gap: 50px;
   justify-content: center;
-  padding-left: 0px;
+  padding-right: 170px;
 }
 
 .first-column {
@@ -198,6 +198,10 @@ section#about {
   display: block;
   padding-top: 10px;
   transition: display 0.5s ease;
+}
+
+.box-mob {
+  display: none;
 }
 
 /* .second-column .box:nth-last-of-type(1) {
@@ -570,13 +574,13 @@ footer {
   .box h3 {
     font-size: 15px;
   }
-
+  
   .services-boxs {
     grid-template-columns: 150px 150px;
     grid-template-rows: 180px;
     column-gap: 35px;
     row-gap: 0;
-    padding-left: 0;
+    padding-right: 0px;
   }
 
   .services-text.services-mob {
@@ -596,6 +600,7 @@ footer {
   }
 
   .portfolio-text {
+    margin-right: 70px;
     padding-bottom: 25px;
   }
 
