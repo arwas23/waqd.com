@@ -135,11 +135,7 @@ section#about {
 }
 
 .about-img img {
-  height: 550px;
-}
-.about-img-mob {
-  height: 550px;
-  display: none;
+  height: 450px;
 }
 /* --------------------------------------------------- Services section -------------------------------------- */
 
@@ -468,8 +464,9 @@ footer {
 
 @media only screen and (max-width: 600px) {
   #hero {
-    background-position: bottom;
-    background-size: 500%;
+    background-image: url(../assets/imgs/hero.png);
+    background-position:   bottom left ;
+    background-size: 350%;
   }
 
   .menu {
@@ -543,7 +540,7 @@ footer {
     font-size: 20px;
   }
 
-  .about-img {
+  .about-img img {
     display: none;
   }
 
@@ -602,6 +599,7 @@ footer {
   .portfolio-text {
     margin-right: 70px;
     padding-bottom: 25px;
+    margin-bottom: 50px;
   }
 
   .portfolio-img div {
@@ -630,6 +628,10 @@ footer {
 
   .clients-text {
     text-align: left;
+  }
+
+  .brand-carousel {
+    width: 75%;
   }
   .text-center h1 {
     font-size: 50px;

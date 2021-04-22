@@ -136,7 +136,7 @@ section#about {
 }
 
 .about-img img {
-  height: 550px;
+  height: 450px;
 }
 
 /* --------------------------------------------------- Services section -------------------------------------- */
@@ -448,8 +448,9 @@ footer {
 
 @media only screen and (max-width: 600px) {
   #hero {
-    background-position: bottom;
-    background-size: 500%;
+    background-image: url(../imgs/hero.png);
+    background-position:   right ;
+    background-size: 350%;
   }
 
   .menu {
@@ -510,10 +511,12 @@ footer {
   }
 
   .about-img img {
-    height: 450px;
-    margin-top: 3px;
+    display: none;
   }
 
+ .about-text p {
+  font-size: 19px;
+  }
   .about-text {
     text-align: right;
     margin-right: 50px;

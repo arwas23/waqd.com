@@ -67,7 +67,7 @@ section#hero .header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 55vh;
+  height: 40vh;
 }
 
 /* --------------------------------------------------- about us section -------------------------------------- */
@@ -84,7 +84,7 @@ section#hero .header {
 }
 
 .aboutus-text div {
-  text-align: right;
+  text-align: center;
   padding-right: 70px;
 }
 .aboutus-text div h1 {
@@ -97,7 +97,6 @@ section#hero .header {
   color: #c2c2c2;
   font-size: 23px;
 }
-
 /* --------------------------------------------------- value section -------------------------------------- */
 
 
@@ -241,6 +240,12 @@ footer {
   }
   .main-menu #lang {
     margin-right: 1px;
+  }
+
+  
+  
+  .pic {
+    height: 5vh;
   }
 
   .aboutus-text.text-center {
