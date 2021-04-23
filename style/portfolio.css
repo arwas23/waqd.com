@@ -70,20 +70,17 @@ section#hero .header {
 
 /* --------------------------------------------------- porfolio section -------------------------------------- */
 
-
-
-
 .gal {
-	-webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
+	-webkit-column-count: 3; 
+  -moz-column-count: 3; 
   column-count: 3;
 }
 	.gal img{ width: 100%; padding: 7px 0;}
 @media (max-width: 500px) {
 
 .gal {
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-  -moz-column-count: 1; /* Firefox */
+	-webkit-column-count: 1; 
+  -moz-column-count: 1; 
   column-count: 1;
 }
 		}
@@ -96,4 +93,59 @@ footer {
   font-size: 14px;
   font-weight: lighter;
   line-height: 1.8;
+}
+/* --------------------------------------------------- mobile section -------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  #hero {
+    background-image: url('../assets/imgs/hero.png');
+    background-size:200%;
+    height: 15vh;
+  }
+  
+  .menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #535353;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .main-menu ul {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .main-menu ul li {
+    padding: 7px 0;
+  }
+
+  .main-menu ul li a {
+    color: white;
+    font-size: 20px;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .open-menu {
+    display: block;
+  }
+  .main-menu #lang {
+    margin-right: 1px;
+  }
+
+
 }
