@@ -13,7 +13,7 @@ body {
 
 #hero {
   height: 100vh;
-  background-image: url('../assets/imgs/hero-4-0١.png');
+  background-image: url('../assets/imgs/Medo2.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -497,8 +497,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   #hero {
-    background-image: url(../assets/imgs/hero.png);
-    background-position:   bottom left ;
+    background-image: url(../assets/imgs/Medo2.gif);
     background-size: 350%;
   }
 
