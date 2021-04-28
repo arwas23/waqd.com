@@ -13,7 +13,7 @@ body {
 
 #hero {
   height: 100vh;
-  background-image: url('../../assets/imgs/hero-2.png');
+  background-image: url('../../assets/imgs/Medo1.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -152,7 +152,7 @@ section#about {
 .services-boxs {
   flex-grow: 1;
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 180px 180px 180px;
   column-gap: 35px;
   row-gap: 50px;
   justify-content: center;
@@ -162,6 +162,7 @@ section#about {
 .first-column {
   text-align: right;
 }
+
 
 .box {
   display: flex;
@@ -294,6 +295,35 @@ section#portfolio {
   height: 210px;
 }
 
+section.overlay-section {
+  position: relative;
+}
+
+section.overlay-section:hover {
+  transition: background-color ease 1s;
+}
+
+section.overlay-section:hover section {
+  visibility: visible;
+}
+
+section.overlay-section section {
+  background-color: #f19323;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0.9;
+}
+
+section.overlay-section section h3,
+section.overlay-section section p {
+  color: white;
+}
 
 /* --------------------------------------------------- Ready section -------------------------------------- */
 
@@ -449,8 +479,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   #hero {
-    background-image: url(../imgs/hero.png);
-    background-position:   right ;
+    background-image: url(../imgs/Medo1.gif);
     background-size: 350%;
   }
 
@@ -497,7 +526,7 @@ footer {
   .main-menu #lang {
     margin-right: 1px;
   }
-  
+
   .hero-text {
     margin-top: 60px;
   }
@@ -515,8 +544,8 @@ footer {
     display: none;
   }
 
- .about-text p {
-  font-size: 19px;
+  .about-text p {
+    font-size: 19px;
   }
   .about-text {
     text-align: right;
@@ -547,7 +576,7 @@ footer {
   }
 
   .services-boxs {
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 150px 150px ;
     grid-template-rows: 180px;
     column-gap: 35px;
     row-gap: 0;
@@ -582,10 +611,15 @@ footer {
     margin-top: 150px;
     margin-bottom: 50px;
   }
+
+  section.overlay-section section {
+    width: 90%;
+    height: 100%;
+  }
+
   section#ready {
     background-size: 80%;
   }
-  
 
   #clients {
     flex-direction: column;
@@ -601,7 +635,6 @@ footer {
   .brand-carousel {
     width: 75%;
   }
-  
 
   .text-center h1 {
     font-size: 50px;

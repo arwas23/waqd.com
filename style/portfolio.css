@@ -15,9 +15,8 @@ body {
 
 #hero {
   background-image: url('../assets/imgs/hero.png');
-  background-position: right;
-  background-size:100%;
-  background-repeat: no-repeat;
+  background-position: center;
+  background-size:40%;
   height: 25vh;
 }
 section#hero .header {
@@ -76,14 +75,38 @@ section#hero .header {
   column-count: 3;
 }
 	.gal img{ width: 100%; padding: 7px 0;}
-@media (max-width: 500px) {
 
-.gal {
-	-webkit-column-count: 1; 
-  -moz-column-count: 1; 
-  column-count: 1;
-}
-		}
+  section.overlay-section {
+    position: relative;
+  }
+
+  section.overlay-section:hover {
+    transition: background-color ease 1s;
+  }
+  
+  section.overlay-section:hover section {
+    visibility: visible;
+  }
+  
+  section.overlay-section section {
+    background-color: #7ab1be;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0.9;
+  }
+  
+  section.overlay-section section h3,
+  section.overlay-section section p {
+    color: white;
+  }
+
+    
 
 /* --------------------------------------------------- footer section -------------------------------------- */
 
@@ -146,6 +169,11 @@ footer {
   .main-menu #lang {
     margin-right: 1px;
   }
+.gal {
+	-webkit-column-count: 1; 
+  -moz-column-count: 1; 
+  column-count: 1;
+}
 
 
 }

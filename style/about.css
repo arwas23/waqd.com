@@ -63,7 +63,7 @@ section#hero .header {
 /* --------------------------------------------------- pic section -------------------------------------- */
 
 #pic {
-  background-image: url('../assets/imgs/about-header.jpg');
+  background-image: url('../assets/imgs/pattern.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
