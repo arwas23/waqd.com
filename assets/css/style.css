@@ -100,6 +100,7 @@ section.hero-text {
 
 section#about {
   padding: 150px 0;
+  margin-top: 50px;
 }
 
 #about .about-content {
@@ -136,7 +137,7 @@ section#about {
 }
 
 .about-img img {
-  height: 450px;
+  height: 250px;
 }
 
 /* --------------------------------------------------- Services section -------------------------------------- */
@@ -308,7 +309,7 @@ section.overlay-section:hover section {
 }
 
 section.overlay-section section {
-  background-color: #f19323;
+  background-color: #7ab1be;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -604,6 +605,11 @@ footer {
   }
 
   .portfolio-img div img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .portfolio-img div video {
     width: 170px;
     height: 170px;
   }
