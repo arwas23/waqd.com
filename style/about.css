@@ -12,7 +12,6 @@ body {
 /* --------------------------------------------------- hero-header section -------------------------------------- */
 
 section#hero .header {
-  background-color: #383838;
   display: flex;
   padding: 35px 0;
   align-items: center;
@@ -190,7 +189,7 @@ section#values {
 
 footer {
   background-color: #7ab1be;
-  height: 300px;
+  height: 350px;
   font-size: 14px;
   font-weight: lighter;
   line-height: 1.8;
