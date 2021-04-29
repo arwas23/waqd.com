@@ -75,15 +75,16 @@ section.hero-text {
 
 .hero-text h2 {
   color: white;
-  padding: 10px 0;
+  padding-top: 85px;
   font-size: 50px;
   font-weight: 400;
 }
 
 .hero-text h1 {
   color: #d51f26;
-  font-size: 55px;
-  margin-bottom: 40px;
+  font-size: 55px; 
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .hero-text a {
@@ -91,6 +92,7 @@ section.hero-text {
   text-decoration: none;
   font-weight: bold;
   background-color: #7ab1be;
+  margin-top: 30px;
   padding: 10px 25px;
   font-size: 15px;
   border-radius: 25px;
