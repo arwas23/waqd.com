@@ -602,7 +602,6 @@ footer {
   }
 
   .mobile-show  {
-    padding-top: 35px;
   }
 
   #portfolio {
@@ -665,6 +664,8 @@ footer {
 }
 @media only screen and (max-width: 800px) {
   .box.mobile-show {
+    padding-top: 35px;
+
     display: block;
   }
 
