@@ -240,6 +240,9 @@ section#about {
   font-size: 20px;
   padding-bottom: 20px;
 }
+.box.mobile-show {
+  display: none;
+}
 
 /* --------------------------------------------------- Protfolio section -------------------------------------- */
 
@@ -598,10 +601,16 @@ footer {
     font-size: 35px;
   }
 
+  .mobile-show  {
+    padding-top: 35px;
+  }
+
   #portfolio {
     flex-direction: column;
   }
-
+  section#portfolio {
+    padding-top: 150px;
+  }
   .portfolio-img div {
     grid-template-columns: 190px 190px;
     justify-content: center;
@@ -652,5 +661,14 @@ footer {
 
   .col-12.col-md-7.px-0 {
     padding-left: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .box.mobile-show {
+    display: block;
+  }
+
+  .box.box-mobile {
+    display: none;
   }
 }

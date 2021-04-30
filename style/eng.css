@@ -259,6 +259,9 @@ section#about {
   font-size: 20px;
   padding-bottom: 20px;
 }
+.box.mobile-show {
+  display: none;
+}
 
 /* --------------------------------------------------- Protfolio section -------------------------------------- */
 
@@ -624,6 +627,9 @@ footer {
   .box i {
     font-size: 35px;
   }
+  .mobile-show  {
+    padding-top: 35px;
+  }
 
   #portfolio {
     margin: 250px 0;
@@ -685,5 +691,14 @@ footer {
 
   .col-12.col-md-7.px-0 {
     padding-left: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .box.box-mobile {
+    display: none;
+  }
+
+  .box.mobile-show {
+    display: block;
   }
 }

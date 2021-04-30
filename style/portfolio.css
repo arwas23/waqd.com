@@ -129,7 +129,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   #hero {
-    background-image: url('../assets/imgs/hero.png');
+    background-image: url('../assets/imgs/heroo.png');
     background-size:200%;
     height: 15vh;
   }
