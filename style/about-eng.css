@@ -3,10 +3,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   background: #363636;
+}
+@font-face {
+  font-family:'ping' ;
+  src: url(../assets/fonts/PingLCG-Regular.ttf);
+  font-style: normal;
+  font-weight: 200;
+
 }
 
 /* --------------------------------------------------- hero-header section -------------------------------------- */

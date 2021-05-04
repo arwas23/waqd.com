@@ -1,12 +1,18 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   background: #363636 !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+}
+
+@font-face {
+  font-family:'ping' ;
+  src: url(../fonts/PingAR_Regular.otf);
+  font-style: normal;
+  font-weight: 200;
+
 }
 
 /* --------------------------------------------------- hero-header section -------------------------------------- */
