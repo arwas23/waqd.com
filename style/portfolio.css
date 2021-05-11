@@ -122,7 +122,14 @@ section#portfolio {
     margin-left: -80px;
   }
 
-    
+    .overlay-section h3 p {
+      font-family:'ping' ;
+      src: url(../assets/fonts/PingAR_Regular.otf);
+      font-style: normal;
+      font-weight: 300;   
+      font-size: 30px; 
+
+    }
 
 /* --------------------------------------------------- footer section -------------------------------------- */
 
@@ -132,6 +139,9 @@ footer {
   font-size: 14px;
   font-weight: lighter;
   line-height: 1.8;
+}
+.footer p {
+  font-size: 40px;
 }
 /* --------------------------------------------------- mobile section -------------------------------------- */
 
